@@ -1,0 +1,118 @@
+header{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color: brown;
+    padding-bottom: 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+}
+.navbar img{
+    width: 150px;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar ul{
+    display: flex;
+    gap: 60px;
+    font-size: 25px;
+}
+.navbar ul li a{
+    color:  black;
+}
+h1{
+    text-align: depth;
+}
+.parent{
+    background-image: url(nekles1.jpg);
+    color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    font-style: italic;
+}
+button{
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: cornflowerblue; color: antiquewhite;
+    border: 5px;
+    border-color: aliceblue;
+}
+input{
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+.parent1{
+    background-color: burlywood;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    color: ;
+}
+.main p{
+    text-align: center;
+    color: blueviolet;
+    font-size: 30px;
+}
+.main h1{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    font-style: italic;
+}
+.parent3{
+    background-color: darksalmon;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    text-align: center;
+}
+.parent3 h1{
+    font-style: italic;
+    
+}
+.parent3 p{
+    font-size: 20px;
+    color: darkred;
+}
+.parent4{
+    background-image: url(bangles1.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 40px;
+    align-items: center;
+    text-align: left;
+    padding: 140px;
+    font-style: italic;
+    color: white;
+}
+.ch14 p{
+    color: black;
+}
+.ch14 button{
+    border-radius: 0%;
+    color: red;
+    background-color: white;
+}
+.parent5{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+}
+.parent2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black; color: antiquewhite;
+    font-size: 20px;
+}
