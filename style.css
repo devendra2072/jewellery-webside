@@ -1,10 +1,15 @@
 /* This is a header */
 header {
+    background-color: ghostwhite;
     text-align: center;
-    font-size: 50px;
-    font-style: italic;
-    color: brown;
-    padding-bottom: 30px;
+    font-size: 60px;
+    /* font-style: italic; */
+    color: purple;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+    font-family: Calibri (Body);
 }
 
 
@@ -13,15 +18,20 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: antiquewhite;
+    font-family: sans-serif;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
 }
 
 
 .navbar img {
     width: 150px;
+    mix-blend-mode: darken;
 }
 
 
-.navbar ul li a {
+.navbar a {
     text-decoration: none;
 }
 
@@ -34,12 +44,12 @@ input {
 
 .navbar ul {
     display: flex;
-    gap: 60px;
+    gap: 50px;
     font-size: 25px;
 }
 
 
-.navbar ul li a {
+.navbar a {
     color: black;
 }
 
@@ -61,6 +71,8 @@ input {
     align-items: center;
     padding-left: 50px;
     font-style: italic;
+    border: 5px solid rgb(218, 218, 217);
+    font-family: cursive;
 }
 
 .parent p {
@@ -69,16 +81,19 @@ input {
     font-size: 30px;
 }
 
+.ch1 button a {
+    color: antiquewhite;
+    text-decoration: none;
+}
 
-
-button {
+.ch1 button {
     margin-left: 250px;
     font-size: 30px;
     border-radius: 20px;
     background-color: cornflowerblue;
-    color: antiquewhite;
     border: 5px;
     border-color: aliceblue;
+    font-family: serif;
 }
 
 
@@ -88,7 +103,11 @@ button {
     display: flex;
     justify-content: space-around;
     font-style: italic;
-    color: ;
+    border: 5px solid rgb(11, 0, 0);
+}
+
+.parent1 img {
+    border: 3px solid black;
 }
 
 .parent1 h1 {
@@ -101,6 +120,7 @@ button {
     text-align: center;
     color: darkmagenta;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 /* this is 2 bacground image set formate  */
@@ -109,6 +129,10 @@ button {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+}
+
+.bgi1 a {
+    text-decoration: none;
 }
 
 .bgimg1 {
@@ -147,6 +171,7 @@ button {
     color: darkgreen;
     margin-left: 10px;
     margin-top: 0px;
+    font-family: sans-serif;
 }
 
 .bgi1 .bgimg1 p {
@@ -155,6 +180,7 @@ button {
     font-style: italic;
     color: aqua;
     padding-left: 10px;
+    font-family: monospace;
 }
 
 .bgi1 .bgimg1 h1 {
@@ -163,17 +189,19 @@ button {
     font-style: italic;
     color: yellowgreen;
     padding-left: 10px;
+    font-family: cursive;
 }
 
 
 .bgi1 .bgimg2 button {
     font-weight: bold;
     font-size: 20px;
-    font-style: italic;
     background-color: white;
     color: black;
     margin-left: 10px;
     margin-top: 0px;
+    font-family: sans-serif;
+    font-style: italic;
 }
 
 .bgi1 .bgimg2 p {
@@ -182,6 +210,7 @@ button {
     font-style: italic;
     color: darkblue;
     padding-left: 10px;
+    font-family: monospace;
 }
 
 .bgi1 .bgimg2 h1 {
@@ -190,16 +219,18 @@ button {
     font-style: italic;
     color: black;
     padding-left: 10px;
+    font-family: cursive;
 }
 
 .bgi1 .bgimg3 button {
     font-weight: bold;
     font-size: 20px;
-    font-style: italic;
     background-color: gold;
     color: red;
     margin-left: 10px;
     margin-top: 0px;
+    font-family: sans-serif;
+    font-style: italic;
 }
 
 .bgi1 .bgimg3 p {
@@ -208,6 +239,7 @@ button {
     font-style: italic;
     color: blue;
     padding-left: 10px;
+    font-family: monospace;
 }
 
 .bgi1 .bgimg3 h1 {
@@ -216,6 +248,7 @@ button {
     font-style: italic;
     color: crimson;
     padding-left: 10px;
+    font-family: cursive;
 }
 
 /* complete 2 bacground image  */
@@ -227,16 +260,18 @@ button {
     font-weight: bold;
     text-decoration-line: underline;
     text-decoration-style: dashed;
+    font-family: cursive;
 }
 
 
 .main h1 {
     text-align: center;
     color: black;
-    font-size: 50px;
+    font-size: 60px;
     font-style: italic;
-    text-decoration-line: underline; 
+    text-decoration-line: underline;
     text-decoration-style: wavy;
+    font-family: monospace;
 }
 
 
@@ -246,11 +281,16 @@ button {
     justify-content: space-around;
     padding-top: 30px;
     text-align: center;
+    border: 5px solid yellow;
 }
 
+.parent3 img {
+    border: 5px solid black;
+}
 
 .parent3 h1 {
     font-style: italic;
+    font-family: sans-serif;
 }
 
 
@@ -259,6 +299,7 @@ button {
     color: darkred;
     font-weight: bold;
     margin-top: -10px;
+    font-family: sans-serif;
 }
 
 /* this is a bangles  */
@@ -275,12 +316,22 @@ button {
     font-style: italic;
     color: white;
     margin-right: 30px;
+    border: 5px solid greenyellow;
+}
+
+.parent4 a {
+    text-decoration: none;
+}
+
+.parent4 button {
+    font-size: 30px;
 }
 
 .ch15 h1 {
     margin-top: -50px;
     margin-left: -70px;
-    argin-top: -100px;
+    font-family: Pristina;
+    font-weight: 100;
 }
 
 .ch15 p {
@@ -288,6 +339,7 @@ button {
     margin-left: -70px;
     margin-top: -65px;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 
@@ -296,72 +348,347 @@ button {
     color: red;
     background-color: white;
     margin-left: -80px;
-    argin-top: -100px;
+    margin-top: -100px;
+    font-family: sans-serif;
+    font-style: italic;
 }
 
 /* this is logo  */
 .parent5 {
-    background-color: blanchedalmond;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 50px;
-
 }
 
+.parent5 img {
+    mix-blend-mode: darken;
+}
 
-.main2 p{
+.main2 p {
     text-align: center;
     font-style: italic;
     font-weight: bold;
     text-decoration-line: underline;
     font-size: 30px;
     color: darkmagenta;
+    font-family: Wingdings 3;
 }
 
-.main2 h1{
+.main2 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     font-style: italic;
     text-decoration-line: underline;
     text-decoration-style: wavy;
+    font-family: Wingdings 3;
 }
 
-.parent6{
+.parent6 {
     display: flex;
     justify-content: center;
     padding-top: 30px;
     background-color: antiquewhite;
     text-align: center;
     color: forestgreen;
-    font-style:italic ;
+    font-style: italic;
 
 }
-.parent6 p{
+
+.parent6 h1 {
+    font-family: Pristina;
+}
+
+.parent6 img {
+    border: 3px solid mediumvioletred;
+}
+
+.parent6 p {
     color: red;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 
-.ch22{
+
+.ch22 {
     padding-top: 30px;
 
 }
 
-.ch23{
+.ch23 {
     margin-left: 50px;
     margin-right: 50px;
 
 
 }
 
-.ch24{
+.ch24 {
     padding-top: 30px;
 
 }
 
+.main3 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main3 p {
+    font-size: 30px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-bottom: -25px;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-family: Algerian;
+}
+
+.main3 h1 {
+    font-size: 50px;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-family: Castellar;
+
+}
+
+.main3 h2 {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 100px;
+    margin-top: -65px;
+
+}
+
+.para1 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -55px;
+    font-family: sans-serif;
+
+}
+
+.parent7 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.ph {
+    font-size: 80px;
+    font-family: serif;
+}
+
+.phh {
+    font-size: 80px;
+    margin-left: 30px;
+    margin-top: -80px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.phhh {
+    font-size: 80px;
+    margin-top: -80px;
+    font-family: serif;
+}
+
+.para2 {
+
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -50px;
+    font-family: cursive;
+}
+
+.hw {
+    background-color: black;
+    color: antiquewhite;
+    margin-right: 555px;
+    font-size: 20px;
+    font-family: serif;
+    padding: 15px;
+
+}
+
+.parent8 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.parent8 img {
+    margin-right: 200px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.ph1 {
+    font-size: 80px;
+    font-family: serif;
+}
+
+.phh1 {
+    font-size: 80px;
+    margin-left: 30px;
+    margin-top: -80px;
+}
+
+.phhh1 {
+    font-size: 80px;
+    margin-top: -80px;
+    font-family: serif;
+}
+
+.para3 {
+
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -50px;
+    font-family: cursive;
+}
+
+.ch26 button {
+    background-color: black;
+    color: antiquewhite;
+    margin-left: -5px;
+    font-size: 20px;
+    font-family: serif;
+    padding: 15px;
+    border-radius: 0px;
+}
+
+
+.main4 {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    padding-bottom: 30px;
+}
+
+.para4 {
+    color: goldenrod;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    text-decoration-line: underline;
+
+}
+
+.para5 {
+    color: black;
+    font-size: 60px;
+    font-family: Pristina;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration-line: underline;
+}
+
+.parent9 {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgoldenrodyellow;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.ch27 img {
+    border: 3px solid black;
+}
+
+
+.ch29 img {
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+
+.parent9 p {
+    color: purple;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.parent9 a {
+    text-decoration: none;
+}
+
+.parent9 button {
+    text-align: center;
+    background-color: lightcyan;
+    /* font-family: monospace; */
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: -20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.parent10 {
+    text-align: center;
+    padding-top: 60px;
+    background-color: lightgray;
+    font-size: 30px;
+    font-family: Bodoni MT;
+}
+
+.parent10 input {
+    border-radius: 0px;
+    font-size: 25px;
+    color: darkgoldenrod;
+}
+
+.parent11 {
+    text-align: center;
+    padding-top: 50px;
+    background-color: lightgray;
+    font-size: 30px;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.parent11 p {
+    color: darkgoldenrod;
+}
+
+.parent12 {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+.parent12 input {
+    border: 1px solid black;
+    border-radius: 0px;
+    width: -400px;
+    padding-right: 300px;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.parent12 button {
+    background-color: black;
+    margin-left: -25px;
+    padding: 10px;
+}
+
+.parent12 a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
 
 /* this is last list menu ba  */
 .parent2 {
@@ -370,4 +697,40 @@ button {
     background-color: black;
     color: antiquewhite;
     font-size: 20px;
+}
+
+.ch31 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+.c1 {
+    color: crimson;
+
+}
+
+.c2 {
+    color: navy;
+}
+
+.c3 {
+    color: red;
+}
+
+.c6 {
+    color: red;
+}
+
+.c8 {
+    color: red;
+}
+
+.c9 {
+    color: yellow;
+}
+
+.c10 {
+    color: green;
 }
