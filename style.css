@@ -1,9 +1,13 @@
 /* This is a header */
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: ghostwhite;
     text-align: center;
     font-size: 60px;
-    /* font-style: italic; */
+    font-style: italic;
     color: purple;
     padding-bottom: 15px;
     font-weight: bold;
@@ -17,7 +21,7 @@ header {
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: antiquewhite;
+    background-color: lightgray;
     font-family: sans-serif;
     border: 2px solid black;
     text-align: center;
@@ -33,6 +37,7 @@ header {
 
 .navbar a {
     text-decoration: none;
+    color: black;
 }
 
 input {
@@ -47,12 +52,6 @@ input {
     gap: 50px;
     font-size: 25px;
 }
-
-
-.navbar a {
-    color: black;
-}
-
 
 .parent h1 {
     text-align: depth;
@@ -97,17 +96,40 @@ input {
 }
 
 
+.climbers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .parent1 {
-    background-color: burlywood;
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     font-style: italic;
-    border: 5px solid rgb(11, 0, 0);
+    /* border: 5px solid rgb(11, 0, 0); */
+    position: relative;
+    animation-name: slie;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
-.parent1 img {
-    border: 3px solid black;
+@keyframes slie {
+    0% {
+        top: o;
+        left: -500px;
+    }
+
+    50% {
+        top: 0;
+        left: 50px;
+    }
+}
+
+
+.parent1 :hover img {
+    border: 2px solid black;
+    background-color: aqua;
+    cursor: pointer;
 }
 
 .parent1 h1 {
@@ -121,6 +143,12 @@ input {
     color: darkmagenta;
     font-weight: bold;
     font-family: sans-serif;
+}
+
+
+.gift {
+    background-color: gray;
+    mix-blend-mode: darken;
 }
 
 /* this is 2 bacground image set formate  */
@@ -276,16 +304,16 @@ input {
 
 
 .parent3 {
-    background-color: darksalmon;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
     text-align: center;
-    border: 5px solid yellow;
+    border: 2px solid black;
 }
 
-.parent3 img {
-    border: 5px solid black;
+.parent3 :hover img {
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 .parent3 h1 {
@@ -390,7 +418,7 @@ input {
     display: flex;
     justify-content: center;
     padding-top: 30px;
-    background-color: antiquewhite;
+    background-color: grey;
     text-align: center;
     color: forestgreen;
     font-style: italic;
@@ -401,8 +429,9 @@ input {
     font-family: Pristina;
 }
 
-.parent6 img {
+.parent6 :hover img {
     border: 3px solid mediumvioletred;
+    cursor: pointer;
 }
 
 .parent6 p {
@@ -478,6 +507,22 @@ input {
     margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: o;
+        left: -500px;
+    }
+
+    50% {
+        top: 0;
+        left: 300px;
+    }
 }
 
 
@@ -522,7 +567,24 @@ input {
 .parent8 {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    animation-name: slid;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes slid {
+    0% {
+        top: 0;
+        right: -500px;
+    }
+
+    50% {
+        top: 0;
+        right: 300px;
+    }
+}
+
 
 .parent8 img {
     margin-right: 200px;
@@ -569,7 +631,7 @@ input {
 
 .main4 {
     text-align: center;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
     padding-bottom: 30px;
 }
 
@@ -595,7 +657,7 @@ input {
 .parent9 {
     display: flex;
     justify-content: space-around;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
     padding-bottom: 50px;
     padding-top: 30px;
 }
@@ -647,6 +709,13 @@ input {
     border-radius: 0px;
     font-size: 25px;
     color: darkgoldenrod;
+}
+
+
+.de {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
 }
 
 .parent11 {
@@ -733,4 +802,12 @@ input {
 
 .c10 {
     color: green;
+}
+
+.para6 {
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+    margin-top: -20px;
+    padding-top: 10px;
 }
