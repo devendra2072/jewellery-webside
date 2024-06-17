@@ -795,6 +795,7 @@ input {
 
 
 .parent8a{
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-evenly
 }
