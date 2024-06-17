@@ -1,9 +1,10 @@
-/* This is a header */
+/* --------------This is a header section-----------------*/
 html {
     scroll-behavior: smooth;
 }
 
 header {
+    flex-wrap: wrap-reverse;
     background-color: ghostwhite;
     text-align: center;
     font-size: 60px;
@@ -14,20 +15,65 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 2px solid black;
     font-family: Calibri (Body);
+    box-shadow: 1px 2px 5px  1px black;
+    text-shadow: 5px 5px 5px black;
+}
+
+marquee {
+    flex-wrap: wrap-reverse;
+    word-spacing: 3px;
+    color: blue;
 }
 
 
-/* this is a navbar  */
+/* -----------------this is a navbar section------------------ */
 .navbar {
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-around;
-    background-color: lightgray;
     font-family: sans-serif;
     border: 2px solid black;
     text-align: center;
     align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 2px 1px 5px  1px black;
+    text-shadow: 1px 1px 1px black;
 }
 
+.navbar label {
+    display: none;
+}
+
+#demo {
+    display: none;
+}
+
+#demo:checked~.navbar ul {
+    display: block;
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        height: 90px;
+    }
+
+    .navbar label {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        position: absolute;
+        top: 270px;
+        width: 100%;
+        background-color: blue;
+    }
+
+    .navbar ul li a {
+        color: red;
+    }
+}
 
 .navbar img {
     width: 150px;
@@ -42,7 +88,8 @@ header {
 
 input {
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 25px;
+    padding-right: 15px;
 
 }
 
@@ -51,6 +98,7 @@ input {
     display: flex;
     gap: 50px;
     font-size: 25px;
+    /* display: none; */
 }
 
 .parent h1 {
@@ -72,6 +120,8 @@ input {
     font-style: italic;
     border: 5px solid rgb(218, 218, 217);
     font-family: cursive;
+    box-shadow: 3px 4px 5px  2px black;
+    text-shadow: 2px 2px 2px purple;
 }
 
 .parent p {
@@ -81,6 +131,7 @@ input {
 }
 
 .ch1 button a {
+    flex-wrap: wrap-reverse;
     color: antiquewhite;
     text-decoration: none;
 }
@@ -95,33 +146,120 @@ input {
     font-family: serif;
 }
 
+/*---------------------- this is grid section---------------*/
+
+
+.spotlight {
+    margin-left: 15px;
+}
+
+.spotlight h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.parentSpotlight {
+    flex-wrap: wrap-reverse;
+    display: grid;
+    column-gap: 20px;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(15, 300px);
+}
+
+/*.cs {
+                border: 5px solid;
+              }*/
+.csdis {
+    background-color: rgb(200, 44, 44);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: aliceblue;
+    width: 70px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.csdes {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(65, 63, 63);
+}
+
+.disPrice {
+    color: red;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.oriPrice {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.cs:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
+
+
+.climbers img:hover{
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
 
 .climbers {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-evenly;
 }
+.era{
+    box-shadow: 5px 10px 10px  2px black;
+}
+.era2{
+    box-shadow: 5px 10px 10px  2px black;
+}
 
 .parent1 {
+    flex-wrap: wrap-reverse;
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     font-style: italic;
+    margin-bottom: 30px;
     /* border: 5px solid rgb(11, 0, 0); */
     position: relative;
     animation-name: slie;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 10;
+    box-shadow: 5px 10px 10px  1px black;
+    text-shadow: 2px 2px 2px goldenrod;
+}
+.parent1 img{
+    box-shadow: 4px 4px 5px 1px black;
 }
 
 @keyframes slie {
     0% {
         top: o;
-        left: -500px;
+        left: -50px;
     }
 
     50% {
         top: 0;
-        left: 50px;
+        left: 30px;
     }
 }
 
@@ -147,23 +285,28 @@ input {
 
 
 .gift {
+    flex-wrap: wrap-reverse;
     background-color: gray;
     mix-blend-mode: darken;
 }
 
-/* this is 2 bacground image set formate  */
+/*----------- this is 2 bacground image set formate section----------- */
 
 .bgi1 {
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
 
 .bgi1 a {
     text-decoration: none;
 }
 
 .bgimg1 {
+    box-shadow: 2px 3px 10px  1px black;
     background-image: url(g.avif);
     height: 400px;
     width: 580px;
@@ -173,6 +316,7 @@ input {
 }
 
 .bgimg2 {
+    box-shadow: 2px 3px 10px  2px black;
     background-image: url(payal2.jpg);
     height: 400px;
     width: 600px;
@@ -183,6 +327,7 @@ input {
 
 
 .bgimg3 {
+    box-shadow: 2px 3px 10px  2px black;
     background-image: url(bgdiamonds.avif);
     height: 400px;
     width: 550px;
@@ -191,14 +336,14 @@ input {
     margin-right: 20px;
 }
 
-.bgi1 .bgimg1 button {
+.bgi1 button {
+    box-shadow: 2px 3px 5px  2px black;
     font-weight: bold;
     font-size: 20px;
     font-style: italic;
     background-color: beige;
-    color: darkgreen;
     margin-left: 10px;
-    margin-top: 0px;
+    margin-top: 195px;
     font-family: sans-serif;
 }
 
@@ -221,17 +366,6 @@ input {
 }
 
 
-.bgi1 .bgimg2 button {
-    font-weight: bold;
-    font-size: 20px;
-    background-color: white;
-    color: black;
-    margin-left: 10px;
-    margin-top: 0px;
-    font-family: sans-serif;
-    font-style: italic;
-}
-
 .bgi1 .bgimg2 p {
     font-weight: bold;
     font-size: 20px;
@@ -250,16 +384,7 @@ input {
     font-family: cursive;
 }
 
-.bgi1 .bgimg3 button {
-    font-weight: bold;
-    font-size: 20px;
-    background-color: gold;
-    color: red;
-    margin-left: 10px;
-    margin-top: 0px;
-    font-family: sans-serif;
-    font-style: italic;
-}
+
 
 .bgi1 .bgimg3 p {
     font-weight: bold;
@@ -279,9 +404,14 @@ input {
     font-family: cursive;
 }
 
-/* complete 2 bacground image  */
+/* ------------------------complete 2 bacground image section----------- */
+.main {
+    
+    flex-wrap: wrap-reverse;
+}
 
 .main p {
+    text-shadow: 2px 2px 3px purple;
     text-align: center;
     color: maroon;
     font-size: 30px;
@@ -293,6 +423,7 @@ input {
 
 
 .main h1 {
+    text-shadow: 3px 5px 5px red;
     text-align: center;
     color: black;
     font-size: 60px;
@@ -304,6 +435,9 @@ input {
 
 
 .parent3 {
+    box-shadow: 2px 3px 5px 2px rebeccapurple;
+    text-shadow: 2px 2px 4px black;
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
@@ -330,13 +464,15 @@ input {
     font-family: sans-serif;
 }
 
-/* this is a bangles  */
+/* ---------------------------this is a bangles section=-----------------*/
 .parent4 {
+    flex-wrap: wrap-reverse;
     background-image: url(bangles1.jpg);
     height: 600px;
     background-repeat: no-repeat;
     margin-left: 30px;
     margin-top: 10px;
+    margin-bottom: 50px;
     font-size: 40px;
     align-items: center;
     text-align: left;
@@ -344,7 +480,8 @@ input {
     font-style: italic;
     color: white;
     margin-right: 30px;
-    border: 5px solid greenyellow;
+    box-shadow: 5px 5px 5px 2px black;
+    text-shadow: 2px 2px 4px red;
 }
 
 .parent4 a {
@@ -381,17 +518,28 @@ input {
     font-style: italic;
 }
 
-/* this is logo  */
+/*------------------- this is logo section----------------- */
 .parent5 {
+    flex-wrap: wrap-reverse;
     background-color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 30px;
     margin-bottom: 50px;
+    box-shadow: 2px 3px 5px 2px black;
+    text-shadow: 2px 2px 4px red;
+    
+}
+
+.parent5 img:hover{
+    transform: scale(1.23);
+    transition: transform 0.10s;
 }
 
 .parent5 img {
-    mix-blend-mode: darken;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    mix-blend-mode:difference;
 }
 
 .main2 p {
@@ -402,6 +550,12 @@ input {
     font-size: 30px;
     color: darkmagenta;
     font-family: Wingdings 3;
+}
+
+
+.main2 {
+    flex-wrap: wrap-reverse;
+    text-shadow: 2px 3px 2px seagreen;
 }
 
 .main2 h1 {
@@ -415,10 +569,10 @@ input {
 }
 
 .parent6 {
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: center;
     padding-top: 30px;
-    background-color: grey;
     text-align: center;
     color: forestgreen;
     font-style: italic;
@@ -439,6 +593,7 @@ input {
     font-size: 23px;
     font-weight: bold;
     font-family: sans-serif;
+    text-shadow: 2px 2px 3px black;
 }
 
 
@@ -461,6 +616,8 @@ input {
 }
 
 .main3 {
+    text-shadow: 2px 3px 3px slategrey;
+    flex-wrap: wrap-reverse;
     text-align: center;
     padding-top: 50px;
 }
@@ -476,6 +633,7 @@ input {
 }
 
 .main3 h1 {
+    text-shadow: 2px 3px 3px aquamarine;
     font-size: 50px;
     font-style: italic;
     text-decoration-line: underline;
@@ -485,6 +643,7 @@ input {
 }
 
 .main3 h2 {
+    text-shadow: 5px 5px 5px red;
     color: goldenrod;
     font-weight: bold;
     font-size: 100px;
@@ -493,6 +652,8 @@ input {
 }
 
 .para1 {
+    text-shadow: 2px 3px 2px aquamarine;
+    flex-wrap: wrap-reverse;
     color: black;
     text-align: center;
     font-size: 30px;
@@ -504,24 +665,26 @@ input {
 }
 
 .parent7 {
+    text-shadow: 5px 5px 5px black;
+    flex-wrap: wrap-reverse;
     margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
     position: relative;
     animation-name: slide;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count:10;
 }
 
 @keyframes slide {
     0% {
         top: o;
-        left: -500px;
+        left: -100px;
     }
 
     50% {
         top: 0;
-        left: 300px;
+        left: 150px;
     }
 }
 
@@ -565,23 +728,25 @@ input {
 }
 
 .parent8 {
+    text-shadow: 5px 5px 5px black;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
     position: relative;
     animation-name: slid;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 10;
 }
 
 @keyframes slid {
     0% {
         top: 0;
-        right: -500px;
+        right: -100px;
     }
 
     50% {
         top: 0;
-        right: 300px;
+        right: 150px;
     }
 }
 
@@ -629,20 +794,36 @@ input {
 }
 
 
-.main4 {
+.parent8a{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.parent8a video:hover{
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
+.parent8a video{
+    box-sizing: border-box;
+    margin-top: 100px;
+    box-shadow: 20px 20px 5px 2px black;
+}
+
+.main4 { 
+    flex-wrap: wrap-reverse;
     text-align: center;
     background-color: white;
     padding-bottom: 30px;
 }
 
 .para4 {
+    text-shadow: 5px 5px 0px black;
     color: goldenrod;
     font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
     padding-top: 30px;
     text-decoration-line: underline;
-
 }
 
 .para5 {
@@ -655,6 +836,8 @@ input {
 }
 
 .parent9 {
+    text-shadow: 1px 1px 1px black;
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-around;
     background-color: white;
@@ -662,16 +845,14 @@ input {
     padding-top: 30px;
 }
 
-.ch27 img {
+.parent9 img {
+    box-shadow: 3px 5px 4px 2px black;
     border: 3px solid black;
 }
-
-
-.ch29 img {
-    border: 3px solid black;
-    object-fit: cover;
+.parent9 img:hover{
+    transform: scale(1.03);
+    transition: transform 0.1s;
 }
-
 
 .parent9 p {
     color: purple;
@@ -698,8 +879,12 @@ input {
 }
 
 .parent10 {
+    text-shadow: 5px 5px 5px white;
+    flex-wrap: wrap-reverse;
     text-align: center;
     padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
     background-color: lightgray;
     font-size: 30px;
     font-family: Bodoni MT;
@@ -713,12 +898,23 @@ input {
 
 
 .de {
+    padding-bottom: 30px;
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
 }
+.de img:hover{
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
+.de img{
+    box-shadow: 5px 5px 5px 2px black;
+}
 
 .parent11 {
+    text-shadow: 3px 3px 3px aquamarine;
+    flex-wrap: wrap-reverse;
     text-align: center;
     padding-top: 50px;
     background-color: lightgray;
@@ -732,6 +928,7 @@ input {
 }
 
 .parent12 {
+    flex-wrap: wrap-reverse;
     text-align: center;
     background-color: antiquewhite;
 }
@@ -740,7 +937,6 @@ input {
 .parent12 input {
     border: 1px solid black;
     border-radius: 0px;
-    width: -400px;
     padding-right: 300px;
     margin: 20px;
     padding-top: 10px;
@@ -759,8 +955,9 @@ input {
     font-size: 20px;
 }
 
-/* this is last list menu ba  */
+/* -------------------this is last list menu ba footer section------------------------ */
 .parent2 {
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-evenly;
     background-color: black;
@@ -768,7 +965,12 @@ input {
     font-size: 20px;
 }
 
+.c {
+    padding-left: 50px;
+}
+
 .ch31 {
+    flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-around;
     font-size: 30px;
