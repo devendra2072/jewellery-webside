@@ -130,13 +130,13 @@ input {
     font-size: 30px;
 }
 
-.ch1 button a {
+.parent .ch1 button a {
     flex-wrap: wrap-reverse;
     color: antiquewhite;
     text-decoration: none;
 }
 
-.ch1 button {
+.parent .ch1 button {
     margin-left: 250px;
     font-size: 30px;
     border-radius: 20px;
@@ -243,7 +243,7 @@ input {
     position: relative;
     animation-name: slie;
     animation-duration: 4s;
-    animation-iteration-count: 10;
+    animation-iteration-count: infinite;
     box-shadow: 5px 10px 10px  1px black;
     text-shadow: 2px 2px 2px goldenrod;
 }
@@ -673,7 +673,7 @@ input {
     position: relative;
     animation-name: slide;
     animation-duration: 3s;
-    animation-iteration-count:10;
+    animation-iteration-count:infinite;
 }
 
 @keyframes slide {
@@ -709,7 +709,7 @@ input {
 }
 
 .para2 {
-
+    text-shadow: 1px 1px 1px black;
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
@@ -735,7 +735,7 @@ input {
     position: relative;
     animation-name: slid;
     animation-duration: 5s;
-    animation-iteration-count: 10;
+    animation-iteration-count: infinite;
 }
 
 @keyframes slid {
@@ -775,7 +775,7 @@ input {
 }
 
 .para3 {
-
+    text-shadow: 1px 1px 1px black;
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
