@@ -15,8 +15,12 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 2px solid black;
     font-family: Calibri (Body);
-    box-shadow: 1px 2px 5px  1px black;
+    box-shadow: 1px 2px 5px 1px black;
     text-shadow: 5px 5px 5px black;
+}
+
+header marquee {
+    color: purple;
 }
 
 marquee {
@@ -24,6 +28,16 @@ marquee {
     word-spacing: 3px;
     color: blue;
 }
+
+/* ------------------only for button hover ke liye------------------ */
+
+button:hover{
+    background-color: lime;
+    color: crimson;
+    padding: 10px;
+    font-size: 10px;
+}
+
 
 
 /* -----------------this is a navbar section------------------ */
@@ -36,8 +50,8 @@ marquee {
     text-align: center;
     align-items: center;
     margin-bottom: 30px;
-    box-shadow: 2px 1px 5px  1px black;
-    text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 1px 5px 1px black;
+   
 }
 
 .navbar label {
@@ -48,9 +62,8 @@ marquee {
     display: none;
 }
 
-#demo:checked~.navbar ul {
+#demo:checked~.navbar .ul {
     display: block;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -62,16 +75,12 @@ marquee {
         display: block;
     }
 
-    .navbar ul {
+    .navbar .ul {
         display: none;
         position: absolute;
         top: 270px;
-        width: 100%;
+        width: 100%; 
         background-color: blue;
-    }
-
-    .navbar ul li a {
-        color: red;
     }
 }
 
@@ -79,48 +88,62 @@ marquee {
     width: 150px;
     mix-blend-mode: darken;
 }
-
-
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: darkgreen;
 }
-
 input {
     border-radius: 20px;
     font-size: 25px;
     padding-right: 15px;
-
 }
-
-
 .navbar ul {
     display: flex;
+    margin-right: 40px;
     gap: 50px;
     font-size: 25px;
-    /* display: none; */
+    /* display: none;  */
+}
+/* li::after {
+    content: "";
+    background-color: red;
+    width: 0;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    bottom: -10px;
 }
 
+li:hover::after {
+    font-size: 50px;
+    width: 100%;
+    transition: .5s;
+} */
+
+
+li:hover{
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
 .parent h1 {
     text-align: depth;
     font-size: 60px;
     margin-left: 250px;
 }
 
-
 .parent {
     background-image: url(nekles1.jpg);
     color: antiquewhite;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
     display: flex;
+   margin-top: -30px;
     align-items: center;
     padding-left: 50px;
     font-style: italic;
     border: 5px solid rgb(218, 218, 217);
     font-family: cursive;
-    box-shadow: 3px 4px 5px  2px black;
+    box-shadow: 3px 4px 5px 2px black;
     text-shadow: 2px 2px 2px purple;
 }
 
@@ -144,6 +167,7 @@ input {
     border: 5px;
     border-color: aliceblue;
     font-family: serif;
+    margin-bottom: 20px;
 }
 
 /*---------------------- this is grid section---------------*/
@@ -167,6 +191,19 @@ input {
     overflow-x: auto;
     grid-template-rows: repeat(1, 300px);
     grid-template-columns: repeat(15, 300px);
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .parentSpotlight {
+        grid-template-columns: repeat(3,auto);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .parentSpotlight {
+        grid-template-columns: auto;
+    }
 }
 
 /*.cs {
@@ -213,7 +250,7 @@ input {
 }
 
 
-.climbers img:hover{
+.climbers img:hover {
     transform: scale(1.03);
     transition: transform 0.1s;
 }
@@ -225,12 +262,19 @@ input {
     display: flex;
     justify-content: space-evenly;
 }
-.era{
-    box-shadow: 5px 10px 10px  2px black;
+
+.era {
+    box-shadow: 5px 10px 10px 2px black;
 }
-.era2{
-    box-shadow: 5px 10px 10px  2px black;
+
+.era2 {
+    box-shadow: 5px 10px 10px 2px black;
 }
+ @media screen and (max-width: 600px){
+    .climbers img{
+        width: 100%;
+    }
+ }
 
 .parent1 {
     flex-wrap: wrap-reverse;
@@ -244,24 +288,14 @@ input {
     animation-name: slie;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    box-shadow: 5px 10px 10px  1px black;
-    text-shadow: 2px 2px 2px goldenrod;
+    box-shadow: 5px 10px 10px 1px black;
 }
-.parent1 img{
+
+.parent1 img {
     box-shadow: 4px 4px 5px 1px black;
 }
 
-@keyframes slie {
-    0% {
-        top: o;
-        left: -50px;
-    }
 
-    50% {
-        top: 0;
-        left: 30px;
-    }
-}
 
 
 .parent1 :hover img {
@@ -306,9 +340,9 @@ input {
 }
 
 .bgimg1 {
-    box-shadow: 2px 3px 10px  1px black;
+    box-shadow: 2px 3px 10px 1px black;
     background-image: url(g.avif);
-    height: 400px;
+    height: 420px;
     width: 580px;
     background-repeat: no-repeat;
     padding-right: 0px;
@@ -316,9 +350,9 @@ input {
 }
 
 .bgimg2 {
-    box-shadow: 2px 3px 10px  2px black;
+    box-shadow: 2px 3px 10px 2px black;
     background-image: url(payal2.jpg);
-    height: 400px;
+    height: 420px;
     width: 600px;
     background-repeat: no-repeat;
     padding-right: 0px;
@@ -327,9 +361,9 @@ input {
 
 
 .bgimg3 {
-    box-shadow: 2px 3px 10px  2px black;
+    box-shadow: 2px 3px 10px 2px black;
     background-image: url(bgdiamonds.avif);
-    height: 400px;
+    height: 420px;
     width: 550px;
     background-repeat: no-repeat;
     padding-right: 50px;
@@ -337,7 +371,7 @@ input {
 }
 
 .bgi1 button {
-    box-shadow: 2px 3px 5px  2px black;
+    box-shadow: 2px 3px 5px 2px black;
     font-weight: bold;
     font-size: 20px;
     font-style: italic;
@@ -406,7 +440,7 @@ input {
 
 /* ------------------------complete 2 bacground image section----------- */
 .main {
-    
+
     flex-wrap: wrap-reverse;
 }
 
@@ -436,7 +470,6 @@ input {
 
 .parent3 {
     box-shadow: 2px 3px 5px 2px rebeccapurple;
-    text-shadow: 2px 2px 4px black;
     flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-around;
@@ -528,10 +561,10 @@ input {
     margin-bottom: 50px;
     box-shadow: 2px 3px 5px 2px black;
     text-shadow: 2px 2px 4px red;
-    
+
 }
 
-.parent5 img:hover{
+.parent5 img:hover {
     transform: scale(1.23);
     transition: transform 0.10s;
 }
@@ -539,7 +572,7 @@ input {
 .parent5 img {
     margin-top: 20px;
     margin-bottom: 20px;
-    mix-blend-mode:difference;
+    mix-blend-mode: difference;
 }
 
 .main2 p {
@@ -673,20 +706,9 @@ input {
     position: relative;
     animation-name: slide;
     animation-duration: 3s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
 }
 
-@keyframes slide {
-    0% {
-        top: o;
-        left: -100px;
-    }
-
-    50% {
-        top: 0;
-        left: 150px;
-    }
-}
 
 
 .ph {
@@ -738,17 +760,6 @@ input {
     animation-iteration-count: infinite;
 }
 
-@keyframes slid {
-    0% {
-        top: 0;
-        right: -100px;
-    }
-
-    50% {
-        top: 0;
-        right: 150px;
-    }
-}
 
 
 .parent8 img {
@@ -794,23 +805,24 @@ input {
 }
 
 
-.parent8a{
+.parent8a {
     flex-wrap: wrap-reverse;
     display: flex;
     justify-content: space-evenly
 }
 
-.parent8a video:hover{
+.parent8a video:hover {
     transform: scale(1.03);
     transition: transform 0.1s;
 }
-.parent8a video{
+
+.parent8a video {
     box-sizing: border-box;
     margin-top: 100px;
     box-shadow: 20px 20px 5px 2px black;
 }
 
-.main4 { 
+.main4 {
     flex-wrap: wrap-reverse;
     text-align: center;
     background-color: white;
@@ -850,7 +862,8 @@ input {
     box-shadow: 3px 5px 4px 2px black;
     border: 3px solid black;
 }
-.parent9 img:hover{
+
+.parent9 img:hover {
     transform: scale(1.03);
     transition: transform 0.1s;
 }
@@ -870,7 +883,6 @@ input {
 
 .parent9 button {
     text-align: center;
-    background-color: lightcyan;
     /* font-family: monospace; */
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -891,7 +903,7 @@ input {
     font-family: Bodoni MT;
 }
 
-.parent10 input {
+.parent10 button {
     border-radius: 0px;
     font-size: 25px;
     color: darkgoldenrod;
@@ -905,11 +917,13 @@ input {
     justify-content: space-around;
     margin-top: 5px;
 }
-.de img:hover{
+
+.de img:hover {
     transform: scale(1.03);
     transition: transform 0.1s;
 }
-.de img{
+
+.de img {
     box-shadow: 5px 5px 5px 2px black;
 }
 
@@ -918,6 +932,7 @@ input {
     flex-wrap: wrap-reverse;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
     background-color: lightgray;
     font-size: 30px;
     font-family: cursive;
@@ -933,21 +948,28 @@ input {
     text-align: center;
     background-color: antiquewhite;
 }
-
+.parent12 input{
+    width: 70%;
+    padding: 18px;
+}
+@media screen and (max-width: 600px){
+    input{
+        width: 50%;
+    }
+}
 
 .parent12 input {
     border: 1px solid black;
     border-radius: 0px;
-    padding-right: 300px;
     margin: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .parent12 button {
     background-color: black;
     margin-left: -25px;
-    padding: 10px;
+    padding: 8px;
 }
 
 .parent12 a {
@@ -964,6 +986,7 @@ input {
     background-color: black;
     color: antiquewhite;
     font-size: 20px;
+    font-family: monospace;
 }
 
 .c {
