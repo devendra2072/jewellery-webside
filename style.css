@@ -986,6 +986,7 @@ input::placeholder {
     color: antiquewhite;
     font-size: 20px;
     font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .c {
