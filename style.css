@@ -246,7 +246,7 @@ input {
 
 .oriPrice {
     color: gray;
-    text-decoration: line-through;
+    text-decoration:line-through;
 }
 
 .cs:hover {
